@@ -54,6 +54,8 @@ You can install these dependencies using the following command:
 pipenv install
 `
 
+You can check the training process at `notebook.ipynb`
+
 ## Run Locally
 
 - Run web server using `python predict.py`
