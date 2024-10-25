@@ -9,7 +9,7 @@ def load(filename:str):
 dv = load('dv.bin')
 model = load('model1.bin')
 
-app = Flask('Bank credit scoring')
+app = Flask('Bank subscription scoring')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -21,7 +21,7 @@ def predict():
     
     result = {
         'probability': float(y_pred),
-        'get_credict': bool(score)
+        'get_subscription': bool(score)
     }
     
     return jsonify(result)

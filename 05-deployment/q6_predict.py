@@ -7,9 +7,9 @@ def load(filename:str):
         return pickle.load(f_in)
     
 dv = load('dv.bin')
-model = load('model1.bin')
+model = load('model2.bin')
 
-app = Flask('Bank credit scoring')
+app = Flask('Bank subscription scoring')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -21,7 +21,7 @@ def predict():
     
     result = {
         'probability': float(y_pred),
-        'get_credit': bool(score)
+        'get_subscription': bool(score)
     }
     
     return jsonify(result)

@@ -1,4 +1,4 @@
-FROM svizor/zoomcamp-model:3.10.12-slim
+FROM svizor/zoomcamp-model:3.11.5-slim
 # add your stuff here
 RUN pip install pipenv
 

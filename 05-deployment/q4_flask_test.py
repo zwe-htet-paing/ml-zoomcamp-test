@@ -2,7 +2,7 @@ import requests
 
 url = "http://localhost:9696/predict"
 
-client = {"job": "unknown", "duration": 270, "poutcome": "failure"}
+client = {"job": "student", "duration": 280, "poutcome": "failure"}
 response = requests.post(url, json=client).json()
 
-print(response) # 0.13968
+print(response) # 0.3348
