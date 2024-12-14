@@ -6,3 +6,4 @@ mideterm-project/
 __pycache__
 *.h5
 *.tflite
+*.keras
